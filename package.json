@@ -18,5 +18,14 @@
   "dependencies": {
     "got": "6.7.1",
     "querystring": "0.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhi11210646/image-search-google.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abhi11210646/image-search-google/issues"
+  },
+  "homepage": "https://github.com/abhi11210646/image-search-google#readme"
 }
