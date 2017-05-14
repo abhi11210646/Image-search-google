@@ -1,11 +1,12 @@
-
-> Search images using Google Custom Search Engine API.
+# Google Image Search
+> Search images using Google Custom Search 
 
 
 ## Installation
 
 ```
 $ npm i image-search-google
+
 ```
 
 
@@ -17,8 +18,8 @@ $ npm i image-search-google
 const imageSearch = require('image-search-google');
 
 const client = new imageSearch('CSE ID', 'API KEY');
-
-client.search('Salman Khan')
+var options = {page:1};
+client.search('Salman Khan', options)
 	.then(images => {
 		/*
 		[{
@@ -28,13 +29,14 @@ client.search('Salman Khan')
             'context': item.image.contextLink
 		}]
 		 */
-	});
-
-// paginate results
-client.search('Salman Khan', {page: 1});
+	})
+	.catch(error => console.log(error););
 
 // search for certain size
-client.search('Steve Angello', {size: 'large'});
+client.search('Mahatma Gandhi', {size: 'large'});
+
+// search for certain size
+client.search('Indira Gandhi', {type: 'face'});
 ```
 ## Set up Google Custom Search Engine
 
