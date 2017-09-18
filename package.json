@@ -1,6 +1,6 @@
 {
   "name": "image-search-google",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Search images using Google Custom Search Engine API",
   "main": "index.js",
   "scripts": {
