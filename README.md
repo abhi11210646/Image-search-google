@@ -18,8 +18,8 @@ $ npm i image-search-google
 const imageSearch = require('image-search-google');
 
 const client = new imageSearch('CSE ID', 'API KEY');
-var options = {page:1};
-client.search('Salman Khan', options)
+const options = {page:1};
+client.search('APJ Abdul kalam', options)
 	.then(images => {
 		/*
 		[{
@@ -35,7 +35,7 @@ client.search('Salman Khan', options)
 // search for certain size
 client.search('Mahatma Gandhi', {size: 'large'});
 
-// search for certain size
+// search for certain type
 client.search('Indira Gandhi', {type: 'face'});
 ```
 ## Set up Google Custom Search Engine
@@ -54,9 +54,7 @@ For the most inclusive set, use the Schema: `Thing`. Make a note of the CSE ID.
 
 ### 2. Enable Image Search
 
-In your search engine settings, enable "Image search":
-
-<img src="media/screenshot.png" width="408" />
+In your search engine settings, enable "Image search".
 
 ### 3. Set up a Google Custom Search Engine API
 
